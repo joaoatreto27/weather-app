@@ -29,27 +29,22 @@ form.addEventListener('submit', function(e){
         myCity.innerHTML = city;
         temp.innerHTML = `${tempValue}}`
         weather.innerHTML = `${weatherMain}`
-        temp.innerHTML = `{tempValue}<span><sup>o</sup>C</span>`;
+        temp.innerHTML = `${tempValue}<span><sup>o</sup>C</span>`;
 
         if(weatherMain === 'Clear'){
-            image.src = `./assets/sunny.png`;
-            myWeatherContainer.style.backgroundColor = '#ec6e4c';
+            image.src = `./assets/sunny.jpg`;
         }
         if(weatherMain === 'Clouds'){
-            image.src = `./assets/clouds.png`;
-            myWeatherContainer.style.backgroundColor = '#86d3d3';
+            image.src = `./assets/clouds.jpg`;
         }
         if(weatherMain === 'Rain'){
-            image.src = `./assets/rain.png`;
-            myWeatherContainer.style.backgroundColor = '#494bcf';
+            image.src = `./assets/rain.jpg`;
         }
         if(weatherMain === 'Drizzle'){
-            image.src = `./assets/drizzle.png`;
-            myWeatherContainer.style.backgroundColor = '#8rcfcf';
+            image.src = `./assets/drizzle.jpg`;
         }
         if(weatherMain === 'Haze'){
-            image.src = `./assets/haze.png`;
-            myWeatherContainer.style.backgroundColor = '#d8ced2'
+            image.src = `./assets/haze.jpg`;
         }
 
         const currentMonth = date.getMonth();

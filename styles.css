@@ -23,6 +23,8 @@ body{
     align-items: center;
     flex-direction: column;
     box-shadow: 0 0 19px 0 #18bd9e;
+    width: 600px;
+    height: 600px;
 }
 
 #weather-form input{
@@ -65,6 +67,7 @@ body{
 
 .weather-container img{
     width: 50%;
+    mix-blend-mode: multiply;
 }
 
 #temp{
